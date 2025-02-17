@@ -43,6 +43,8 @@ const router = createBrowserRouter(
       <Route path='user/' element={<User />} >
         <Route path=':userid' element={<User />} />
       </Route>
+
+      <Route path='*' element={<h1>404 Not Found</h1>} />
     </Route>
   )
 )
